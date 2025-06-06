@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+header {
+  background-color: #002244;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00c853;
+}
+
+/* Hero Section */
+.hero {
+  background: #e0f7fa;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #00c853;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #009624;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Features */
+.selection-p1 {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.fe-box {
+  background: white;
+  padding: 20px;
+  width: 150px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fe-box:hover {
+  transform: translateY(-5px);
+}
+
+.fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.fe-box h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* About - Team Section */
+.team,
+.vehicles {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-grid,
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.team-card,
+.vehicle-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover,
+.vehicle-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img,
+.vehicle-card img {
+  border-radius: 8px;
+  height: 160px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.team-card h3,
+.vehicle-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Services List */
+.services {
+  padding: 40px 20px;
+  background: #f1f8e9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.services ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Contact */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 40px;
+}
+
+.contact-form-container {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background: #00c853;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #009624;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  z-index: 100;
+}
+
+.whatsapp-icon img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Go To Top Button */
+#goTop {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  padding: 10px 14px;
+  font-size: 20px;
+  background: #002244;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+  transition: background 0.3s ease;
+}
+
+#goTop:hover {
+  background: #00c853;
+}
+
+.gallery {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 18px;
+  margin: 10px;
+  color: #444;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .fe-box {
+    width: 120px;
+  }
+
+  .team-card,
+  .vehicle-card {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+  }
+}
+
+
+/* Footer */
+footer {
+  background-color: #002244;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}

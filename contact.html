@@ -1,0 +1,58 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-form-container">
+        <form
+          action="https://formspree.io/f/xrbkekap"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- ✅ Add name attributes -->
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <!-- Optional: disable CAPTCHA -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: bachapartytransport@gmail.com</p>
+        <p>Phone: +92 300 1234567</p>
+      </div>
+    </section>
+
+    <button id="goTop">&#8679;</button>
+
+    <a href="https://wa.me/923001234567" class="whatsapp-icon">
+      <img src="images/whatsapp.jpg" alt="WhatsApp" />
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
